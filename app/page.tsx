@@ -13,7 +13,7 @@ export default function Home() {
 
   const callGetResponse = async () => {
     setIsLoading(true);
-    let temp = messages;
+    const temp = messages;
     temp.push({ role: "user", content: theInput });
     setMessages(temp)
     setTheInput("");
